@@ -1,4 +1,4 @@
-# [postcss][postcss]-clean [![CI](https://img.shields.io/travis/leodido/postcss-clean/master.svg?style=flat-square)][ci] [![NPM](https://img.shields.io/npm/v/postcss-clean.svg?style=flat-square)][npm] [![Coveralls branch](https://img.shields.io/coveralls/leodido/postcss-clean/master.svg?style=flat-square)](https://coveralls.io/r/leodido/postcss-clean?branch=master)
+# [postcss][postcss]-clean [![CI](https://img.shields.io/travis/leodido/postcss-clean/master.svg?style=flat-square)][ci] [![NPM](https://img.shields.io/npm/v/postcss-clean.svg?style=flat-square)][npm] [![Coveralls branch](https://img.shields.io/coveralls/leodido/postcss-clean/master.svg?style=flat-square)](https://coveralls.io/r/leodido/postcss-clean?branch=master) [![NPM Monthly Downloads](https://img.shields.io/npm/dm/postcss-clean.svg?style=flat-square)][npm]
 
 > PostCss plugin to minify your CSS
 

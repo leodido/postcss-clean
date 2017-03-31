@@ -19,18 +19,18 @@
   "main": "index.js",
   "jsnext:main": "index.m.js",
   "dependencies": {
-    "clean-css": "3.4.x",
-    "postcss": "5.0.x"
+    "clean-css": "^3.4",
+    "postcss": "^5.0"
   },
   "devDependencies": {
     "ava": "^0.18",
-    "babel-eslint": "6.0.x",
+    "babel-eslint": "^6.0",
     "buble": "^0.15",
-    "conventional-changelog-cli": "1.1.x",
-    "coveralls": "2.11.x",
-    "eslint": "2.8.x",
-    "eslint-config-defaults": "9.0.x",
-    "nyc": "6.4.x",
+    "conventional-changelog-cli": "^1.1",
+    "coveralls": "^2.11",
+    "eslint": "^2.8",
+    "eslint-config-defaults": "^9.0",
+    "nyc": "^6.4",
     "read-pkg": "^2.0.0",
     "rollup": "^0.41",
     "rollup-plugin-buble": "^0.15"

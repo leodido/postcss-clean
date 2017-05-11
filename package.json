@@ -19,7 +19,7 @@
   "main": "index.js",
   "jsnext:main": "index.m.js",
   "dependencies": {
-    "clean-css": "3.4.x",
+    "clean-css": "4.1.x",
     "postcss": "6.0.x"
   },
   "devDependencies": {

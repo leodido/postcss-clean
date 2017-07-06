@@ -1,3 +1,36 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/leodido/postcss-clean/compare/v1.0.2...v1.0.3) (2017-07-06)
+
+
+### Build
+
+* Also node 7 in the test matrix ([cd67df681de261bfaaf01e500062da861be459c1](https://github.com/leodido/postcss-clean/commit/cd67df681de261bfaaf01e500062da861be459c1))
+* Automation of the releasing process ([fc20365dbea58d543d57bc61dd7b40668313083e](https://github.com/leodido/postcss-clean/commit/fc20365dbea58d543d57bc61dd7b40668313083e))
+* Destructuring within the configuration file is not possible for node <= 5 ([1e4765f1c3157e34edf93b328c5adfb8d039cd33](https://github.com/leodido/postcss-clean/commit/1e4765f1c3157e34edf93b328c5adfb8d039cd33))
+* Switch to Buble ([b459d2959973f02ec14047c286fe0bcaf4d7ed49](https://github.com/leodido/postcss-clean/commit/b459d2959973f02ec14047c286fe0bcaf4d7ed49))
+
+### Docs
+
+* Monthly downloads badge ([3b9514f10e03572101d63dee292cb6ed4126dc13](https://github.com/leodido/postcss-clean/commit/3b9514f10e03572101d63dee292cb6ed4126dc13))
+
+### Fix
+
+* Now using the "module" field to point to the ES module ([a0870fdbee292f2bd1064b2a9d723faa6384aae8](https://github.com/leodido/postcss-clean/commit/a0870fdbee292f2bd1064b2a9d723faa6384aae8))
+
+### Update
+
+* Support node 6 also ([233bb35f8f89c54b30f24c0d7c2d9fa6a1b28689](https://github.com/leodido/postcss-clean/commit/233bb35f8f89c54b30f24c0d7c2d9fa6a1b28689))
+* Test suite improvements ([c278d39122732829a1c1925037486c0f67ea54fe](https://github.com/leodido/postcss-clean/commit/c278d39122732829a1c1925037486c0f67ea54fe))
+
+### Upgrade
+
+* Buble rather than Babel, plus new AVA ([5531704f41635da38fcf3996cb06379523b8dac6](https://github.com/leodido/postcss-clean/commit/5531704f41635da38fcf3996cb06379523b8dac6))
+* Deprecating node 0.12 ([93f8efd6f8a041caad36c1e22b2c112e7caeddcd](https://github.com/leodido/postcss-clean/commit/93f8efd6f8a041caad36c1e22b2c112e7caeddcd))
+* Minimum node version is now 4 ([8a0ebe4bb3ccbf2589b5f6cacf656da01a649792](https://github.com/leodido/postcss-clean/commit/8a0ebe4bb3ccbf2589b5f6cacf656da01a649792))
+* No need to have a dependency to parse the package JSON ([fd08bff6254e201b4d088bdfcb0d44d8cad856ad](https://github.com/leodido/postcss-clean/commit/fd08bff6254e201b4d088bdfcb0d44d8cad856ad))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/leodido/postcss-clean/compare/v1.0.1...v1.0.2) (2016-05-05)
 

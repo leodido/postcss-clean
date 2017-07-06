@@ -1,31 +1,26 @@
-'use strict'
-
 /* global process */
 
 import buble from 'rollup-plugin-buble'
-import { sync as pkg } from 'read-pkg'
+import { readFileSync } from 'fs';
 
-function inDevelopment() {
-  return process.env.BUILD_ENV && ['development', 'dev', 'develop'].indexOf(process.env.BUILD_ENV.toLowerCase()) >= 0
-}
+const inDevelopment = () =>
+  process.env.BUILD_ENV &&
+  ['development', 'dev', 'develop'].indexOf(process.env.BUILD_ENV.toLowerCase()) >= 0
 
-const {
-  main: dst,
-  "jsnext:main": src,
-  dependencies: dep
-} = pkg('./package.json')
+
+const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'))
 
 const rollupOpts = {
-  entry: src,
+  entry: pkg.module,
   format: 'cjs',
-  external: Object.keys(dep),
+  external: Object.keys(pkg.dependencies),
   plugins: [
     buble({
-      include: src,
+      include: pkg.module,
       transforms: { dangerousForOf: true }
     })
   ],
-  dest: dst
+  dest: pkg.main
 }
 
 if (inDevelopment()) {

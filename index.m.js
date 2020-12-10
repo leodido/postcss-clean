@@ -6,22 +6,26 @@ import CleanCss from 'clean-css'
 const initializer = (opts = {}) => {
   const cleancss = new CleanCss(opts)
 
-  return (css, res) => {
-    return new Promise((resolve, reject) => {
-      cleancss.minify(css.toString(), (err, min) => {
-        if (err) {
-          return reject(new Error(err.join('\n')))
-        }
+  return {
+    postcssPlugin: 'clean',
+    Once(css, { result }) {
+      return new Promise((resolve, reject) => {
+        cleancss.minify(css.toString(), (err, min) => {
+          if (err) {
+            return reject(new Error(err.join('\n')))
+          }
 
-        for (let w of min.warnings) {
-          res.warn(w)
-        }
+          for (let w of min.warnings) {
+            result.warn(w)
+          }
 
-        res.root = postcss.parse(min.styles)
-        resolve()
+          result.root = postcss.parse(min.styles)
+          resolve()
+        })
       })
-    })
+    }
   }
 }
+initializer.postcss = true
 
-export default postcss.plugin('clean', initializer)
+export default initializer

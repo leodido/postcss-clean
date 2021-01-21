@@ -6,7 +6,7 @@ import CleanCss from 'clean-css'
 // Test that postcss plugin works like clean-css
 
 async function arun(t, input, opts = {}) {
-  const result = await postcss([plugin(opts)]).process(input)
+  const result = await postcss([plugin(opts)]).process(input, {from: undefined})
   const output = new CleanCss(opts).minify(input).styles
 
   t.deepEqual(result.css, output)

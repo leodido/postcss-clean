@@ -40,7 +40,7 @@
     "develop": "BUILD_ENV=dev rollup -c rollup.config.js",
     "distrib": "rollup -c rollup.config.js",
     "pretest": "npm run lint && npm run develop",
-    "test": "nyc --reporter=text-summary ava --verbose --serial",
+    "test": "nyc ava --verbose --serial",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html",
     "prepublish": "npm run distrib",

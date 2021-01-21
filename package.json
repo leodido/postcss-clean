@@ -26,7 +26,7 @@
     "ava": "^0.18",
     "babel-eslint": "^6.0",
     "buble": "^0.15",
-    "conventional-changelog-cli": "^1.1",
+    "conventional-changelog-cli": "^2.1",
     "coveralls": "^2.11",
     "eslint": "^2.8",
     "eslint-config-defaults": "^9.0",

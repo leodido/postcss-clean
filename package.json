@@ -19,8 +19,8 @@
   "main": "index.js",
   "module": "index.m.js",
   "dependencies": {
-    "clean-css": "^4.x",
-    "postcss": "^6.x"
+    "clean-css": "^5.3.1",
+    "postcss": "^8.4.16"
   },
   "devDependencies": {
     "ava": "^0.18",
